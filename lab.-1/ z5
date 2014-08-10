@@ -1,0 +1,66 @@
+// Suma de N impares
+
+#include <conio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main (){
+    int N,s=0,i;
+    cout<<"Ingrese N: ";
+    cin>>N;
+    for(i=1;i<=N;i++)
+        if(i%2!=0)
+            s=s+i;
+        cout<<"La suma es: "<<s;
+        getch();
+        return 0;
+}
+
+//La SUMA DE LOS N 1EROS NUEMERO IMPARES.
+
+
+#include <conio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main (){
+int N,s=0,a=1,b=0;
+cout<<"Ingrese N; ";
+cin>>N;
+while(b < N){
+    if(a%2!=0){
+        s = s+a;
+        a=a+2;
+    }
+    b++;
+    }
+cout<<"La suma es: "<<s;
+getch();
+return 0;
+}
+
+//Suma impar mientras no se digite un Nro. negativo
+
+
+#include <conio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int N,s=0;
+    cout<<"Introduzca un numero: ";
+    cin>>N;
+    while(N>0){
+		if(N%2!=0)
+        s=s+N;
+        cout<<endl<<"La suma es: "<<s;
+        cout<<endl<<"Ingrese otro numero: ";
+        cin>>N;
+	}
+    getch();
+	return 0;
+}
